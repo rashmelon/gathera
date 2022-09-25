@@ -1,0 +1,956 @@
+{
+	"info": {
+		"_postman_id": "7ade9fa3-c82d-497b-9cc6-5d8ec2283125",
+		"name": "Gathera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1926028"
+	},
+	"item": [
+		{
+			"name": "Restaurants",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/restaurants",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/restaurants/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"restaurants",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 17 Sep 2022 13:54:01 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3.0,\n        \"createdAt\": \"2022-09-01T15:47:58\",\n        \"updatedAt\": \"2022-09-25T23:37:30\"\n    },\n    {\n        \"id\": 10,\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T14:57:28\",\n            \"updatedAt\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 5.0,\n        \"createdAt\": \"2022-09-17T18:54:02\",\n        \"updatedAt\": \"2022-09-17T18:54:02\"\n    },\n    {\n        \"id\": 11,\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T14:57:28\",\n            \"updatedAt\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 5.0,\n        \"createdAt\": \"2022-09-17T18:54:23\",\n        \"updatedAt\": \"2022-09-17T18:54:23\"\n    },\n    {\n        \"id\": 12,\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T14:57:28\",\n            \"updatedAt\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 5.0,\n        \"createdAt\": \"2022-09-17T20:17:59\",\n        \"updatedAt\": \"2022-09-17T20:17:59\"\n    },\n    {\n        \"id\": 13,\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T14:57:28\",\n            \"updatedAt\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 5.0,\n        \"createdAt\": \"2022-09-18T21:59:29\",\n        \"updatedAt\": \"2022-09-18T21:59:29\"\n    },\n    {\n        \"id\": 14,\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T14:57:28\",\n            \"updatedAt\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3.0,\n        \"createdAt\": \"2022-09-18T21:59:36\",\n        \"updatedAt\": \"2022-09-18T21:59:36\"\n    },\n    {\n        \"id\": 15,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3.0,\n        \"createdAt\": \"2022-09-18T22:00:59\",\n        \"updatedAt\": \"2022-09-18T22:00:59\"\n    },\n    {\n        \"id\": 16,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3.0,\n        \"createdAt\": \"2022-09-18T22:01:27\",\n        \"updatedAt\": \"2022-09-18T22:01:27\"\n    },\n    {\n        \"id\": 17,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3.0,\n        \"createdAt\": \"2022-09-18T22:04:38\",\n        \"updatedAt\": \"2022-09-18T22:04:38\"\n    },\n    {\n        \"id\": 18,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3.0,\n        \"createdAt\": \"2022-09-18T22:06:06\",\n        \"updatedAt\": \"2022-09-18T22:06:06\"\n    },\n    {\n        \"id\": 21,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3.0,\n        \"createdAt\": \"2022-09-25T23:03:35\",\n        \"updatedAt\": \"2022-09-25T23:03:35\"\n    },\n    {\n        \"id\": 22,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3.0,\n        \"createdAt\": \"2022-09-25T23:03:52\",\n        \"updatedAt\": \"2022-09-25T23:03:52\"\n    },\n    {\n        \"id\": 29,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": null,\n        \"deliveryFees\": 0.0,\n        \"createdAt\": \"2022-09-25T23:36:46\",\n        \"updatedAt\": \"2022-09-25T23:36:46\"\n    },\n    {\n        \"id\": 30,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3.0,\n        \"createdAt\": \"2022-09-25T23:36:58\",\n        \"updatedAt\": \"2022-09-25T23:36:58\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/restaurants/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants",
+								"10"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/restaurants/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"restaurants",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 17 Sep 2022 17:33:28 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 10,\n    \"owner\": {\n        \"id\": 5,\n        \"name\": \"koko wawa\",\n        \"email\": \"koko@wawa.com\",\n        \"password\": \"kokowawa\",\n        \"phone\": null,\n        \"emailVerifiedAt\": null,\n        \"createdAt\": \"2022-09-17T14:57:28\",\n        \"updatedAt\": \"2022-09-17T14:57:28\",\n        \"restaurants\": [],\n        \"ownedGroups\": [],\n        \"groups\": []\n    },\n    \"name\": \"R1\",\n    \"imageUrl\": null,\n    \"hotline\": \"19871\",\n    \"workingHours\": \"from 5 to 55\",\n    \"deliveryFees\": 5.0,\n    \"createdAt\": \"2022-09-17T18:54:02\",\n    \"updatedAt\": \"2022-09-17T18:54:02\"\n}"
+						}
+					]
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"R1\",\r\n    \"hotline\": \"19871\",\r\n    \"deliveryFees\": 3,\r\n    \"workingHours\": \"from 5 to 55\",\r\n    \"ownerId\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/restaurants/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "save",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"R1\",\r\n    \"hotline\": \"19871\",\r\n    \"delivery_fees\": 5,\r\n    \"working_hours\": \"from 5 to 55\",\r\n    \"owner_id\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/restaurants/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"restaurants",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 17 Sep 2022 16:54:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 30,\n    \"owner\": {\n        \"id\": 6,\n        \"name\": \"koko wawa\",\n        \"email\": \"koko@wawa.com\",\n        \"password\": \"kokowawa\",\n        \"phone\": null,\n        \"emailVerifiedAt\": null,\n        \"createdAt\": \"2022-09-17T15:56:51\",\n        \"updatedAt\": \"2022-09-17T15:56:51\",\n        \"restaurants\": [],\n        \"ownedGroups\": [],\n        \"groups\": []\n    },\n    \"name\": \"R1\",\n    \"imageUrl\": null,\n    \"hotline\": \"19871\",\n    \"workingHours\": \"from 5 to 55\",\n    \"deliveryFees\": 3.0,\n    \"createdAt\": \"2022-09-25T23:36:58.4938743\",\n    \"updatedAt\": \"2022-09-25T23:36:58.4938743\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"R1\",\r\n    \"hotline\": \"19871\",\r\n    \"deliveryFees\": 3,\r\n    \"workingHours\": \"from 5 to 55\",\r\n    \"ownerId\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/restaurants/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"R2\",\r\n    \"hotline\": \"19872\",\r\n    \"delivery_fees\": 15,\r\n    \"working_hours\": \"from 5 to 55\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/restaurants/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"restaurants",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 17 Sep 2022 18:38:32 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"owner\": {\n        \"id\": 6,\n        \"name\": \"koko wawa\",\n        \"email\": \"koko@wawa.com\",\n        \"password\": \"kokowawa\",\n        \"phone\": null,\n        \"emailVerifiedAt\": null,\n        \"createdAt\": \"2022-09-17T15:56:51\",\n        \"updatedAt\": \"2022-09-17T15:56:51\",\n        \"restaurants\": [],\n        \"ownedGroups\": [],\n        \"groups\": []\n    },\n    \"name\": \"R1\",\n    \"imageUrl\": null,\n    \"hotline\": \"19871\",\n    \"workingHours\": \"from 5 to 55\",\n    \"deliveryFees\": 3.0,\n    \"createdAt\": \"2022-09-01T15:47:58\",\n    \"updatedAt\": \"2022-09-25T23:37:30.9424516\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/restaurants/9",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Group",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/groups/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"groups",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/groups/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"groups",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 21:05:33 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 20,\n        \"name\": \"G1\",\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T14:57:28\",\n            \"updatedAt\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"users\": [],\n        \"createdAt\": \"2022-09-25T22:56:37\",\n        \"updatedAt\": \"2022-09-25T22:56:37\"\n    },\n    {\n        \"id\": 23,\n        \"name\": \"G1\",\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T14:57:28\",\n            \"updatedAt\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"users\": [],\n        \"createdAt\": \"2022-09-25T23:05:04\",\n        \"updatedAt\": \"2022-09-25T23:05:04\"\n    },\n    {\n        \"id\": 24,\n        \"name\": \"G6\",\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T14:57:28\",\n            \"updatedAt\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"users\": [],\n        \"createdAt\": \"2022-09-25T23:05:16\",\n        \"updatedAt\": \"2022-09-25T23:05:16\"\n    },\n    {\n        \"id\": 27,\n        \"name\": \"G6\",\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T14:57:28\",\n            \"updatedAt\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"users\": [],\n        \"createdAt\": \"2022-09-25T23:27:45\",\n        \"updatedAt\": \"2022-09-25T23:27:45\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/groups/24",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"groups",
+								"24"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/groups/19",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"groups",
+										"19"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 21:06:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 24,\n    \"name\": \"G6\",\n    \"owner\": {\n        \"id\": 5,\n        \"name\": \"koko wawa\",\n        \"email\": \"koko@wawa.com\",\n        \"password\": \"kokowawa\",\n        \"phone\": null,\n        \"emailVerifiedAt\": null,\n        \"createdAt\": \"2022-09-17T14:57:28\",\n        \"updatedAt\": \"2022-09-17T14:57:28\",\n        \"restaurants\": [],\n        \"ownedGroups\": [],\n        \"groups\": []\n    },\n    \"users\": [],\n    \"createdAt\": \"2022-09-25T23:05:16\",\n    \"updatedAt\": \"2022-09-25T23:05:16\"\n}"
+						}
+					]
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"G6\",\r\n    \"ownerId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/groups/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"groups",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "save",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"G6\",\r\n    \"owner_id\": 5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/groups/",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"groups",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 21:05:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 31,\n    \"name\": \"G6\",\n    \"owner\": {\n        \"id\": 5,\n        \"name\": \"koko wawa\",\n        \"email\": \"koko@wawa.com\",\n        \"password\": \"kokowawa\",\n        \"phone\": null,\n        \"emailVerifiedAt\": null,\n        \"createdAt\": \"2022-09-17T14:57:28\",\n        \"updatedAt\": \"2022-09-17T14:57:28\",\n        \"restaurants\": [],\n        \"ownedGroups\": [],\n        \"groups\": []\n    },\n    \"users\": null,\n    \"createdAt\": \"2022-09-25T23:39:23.2859959\",\n    \"updatedAt\": \"2022-09-25T23:39:23.2859959\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"G19\",\r\n    \"ownerId\": 6\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/groups/24",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"groups",
+								"24"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"G19\",\r\n    \"owner_id\": 6\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/groups/19",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"groups",
+										"19"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 21:10:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 24,\n    \"name\": \"G19\",\n    \"owner\": {\n        \"id\": 6,\n        \"name\": \"koko wawa\",\n        \"email\": \"koko@wawa.com\",\n        \"password\": \"kokowawa\",\n        \"phone\": null,\n        \"emailVerifiedAt\": null,\n        \"createdAt\": \"2022-09-17T15:56:51\",\n        \"updatedAt\": \"2022-09-17T15:56:51\",\n        \"restaurants\": [],\n        \"ownedGroups\": [],\n        \"groups\": []\n    },\n    \"users\": [],\n    \"createdAt\": \"2022-09-25T23:05:16\",\n    \"updatedAt\": \"2022-09-25T23:39:45.0930816\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/groups/19",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"groups",
+								"19"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dish",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/restaurants/1/dishes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants",
+								"1",
+								"dishes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/restaurants/1/dishes",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"restaurants",
+										"1",
+										"dishes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 21:40:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 25,\n        \"restaurant\": {\n            \"id\": 1,\n            \"owner\": {\n                \"id\": 6,\n                \"name\": \"koko wawa\",\n                \"email\": \"koko@wawa.com\",\n                \"password\": \"kokowawa\",\n                \"phone\": null,\n                \"emailVerifiedAt\": null,\n                \"createdAt\": \"2022-09-17T15:56:51\",\n                \"updatedAt\": \"2022-09-17T15:56:51\",\n                \"restaurants\": [],\n                \"ownedGroups\": [],\n                \"groups\": []\n            },\n            \"name\": \"R1\",\n            \"imageUrl\": null,\n            \"hotline\": \"19871\",\n            \"workingHours\": \"from 5 to 55\",\n            \"deliveryFees\": 3,\n            \"createdAt\": \"2022-09-01T15:47:58\",\n            \"updatedAt\": \"2022-09-25T23:37:30\"\n        },\n        \"name\": \"dish 1\",\n        \"price\": 15.5,\n        \"createdAt\": \"2022-09-25T23:25:51\",\n        \"updatedAt\": \"2022-09-25T23:25:51\"\n    },\n    {\n        \"id\": 26,\n        \"restaurant\": {\n            \"id\": 1,\n            \"owner\": {\n                \"id\": 6,\n                \"name\": \"koko wawa\",\n                \"email\": \"koko@wawa.com\",\n                \"password\": \"kokowawa\",\n                \"phone\": null,\n                \"emailVerifiedAt\": null,\n                \"createdAt\": \"2022-09-17T15:56:51\",\n                \"updatedAt\": \"2022-09-17T15:56:51\",\n                \"restaurants\": [],\n                \"ownedGroups\": [],\n                \"groups\": []\n            },\n            \"name\": \"R1\",\n            \"imageUrl\": null,\n            \"hotline\": \"19871\",\n            \"workingHours\": \"from 5 to 55\",\n            \"deliveryFees\": 3,\n            \"createdAt\": \"2022-09-01T15:47:58\",\n            \"updatedAt\": \"2022-09-25T23:37:30\"\n        },\n        \"name\": \"dish 1\",\n        \"price\": 15.5,\n        \"createdAt\": \"2022-09-25T23:27:34\",\n        \"updatedAt\": \"2022-09-25T23:27:34\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"dish 1\",\r\n    \"price\": 15.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/restaurants/10/dishes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants",
+								"10",
+								"dishes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "save",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"dish 1\",\r\n    \"price\": 15.5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/restaurants/1/dishes",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"restaurants",
+										"1",
+										"dishes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 21:27:34 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 26,\n    \"restaurant\": {\n        \"id\": 1,\n        \"owner\": {\n            \"id\": 5,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"email_verified_at\": null,\n            \"created_at\": \"2022-09-17T14:57:28\",\n            \"updated_at\": \"2022-09-17T14:57:28\",\n            \"restaurants\": [],\n            \"owned_groups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R2\",\n        \"image_url\": null,\n        \"hotline\": \"19872\",\n        \"working_hours\": \"from 5 to 55\",\n        \"delivery_fees\": 15,\n        \"created_at\": \"2022-09-01T15:47:58\",\n        \"updated_at\": \"2022-09-17T20:38:32\"\n    },\n    \"name\": \"dish 1\",\n    \"price\": 15.5,\n    \"created_at\": \"2022-09-25T23:27:34.5074636\",\n    \"updated_at\": \"2022-09-25T23:27:34.5074636\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/restaurants/1/dishes/25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants",
+								"1",
+								"dishes",
+								"25"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/restaurants/1/dishes/25",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"restaurants",
+										"1",
+										"dishes",
+										"25"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 21:41:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 25,\n    \"restaurant\": {\n        \"id\": 1,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3,\n        \"createdAt\": \"2022-09-01T15:47:58\",\n        \"updatedAt\": \"2022-09-25T23:37:30\"\n    },\n    \"name\": \"dish 1\",\n    \"price\": 15.5,\n    \"createdAt\": \"2022-09-25T23:25:51\",\n    \"updatedAt\": \"2022-09-25T23:25:51\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"dish 2\",\r\n    \"price\": 16.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/restaurants/1/dishes/25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants",
+								"1",
+								"dishes",
+								"25"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"dish 2\",\r\n    \"price\": 16.5\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/restaurants/1/dishes/25",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"restaurants",
+										"1",
+										"dishes",
+										"25"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 25 Sep 2022 21:41:51 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 25,\n    \"restaurant\": {\n        \"id\": 1,\n        \"owner\": {\n            \"id\": 6,\n            \"name\": \"koko wawa\",\n            \"email\": \"koko@wawa.com\",\n            \"password\": \"kokowawa\",\n            \"phone\": null,\n            \"emailVerifiedAt\": null,\n            \"createdAt\": \"2022-09-17T15:56:51\",\n            \"updatedAt\": \"2022-09-17T15:56:51\",\n            \"restaurants\": [],\n            \"ownedGroups\": [],\n            \"groups\": []\n        },\n        \"name\": \"R1\",\n        \"imageUrl\": null,\n        \"hotline\": \"19871\",\n        \"workingHours\": \"from 5 to 55\",\n        \"deliveryFees\": 3,\n        \"createdAt\": \"2022-09-01T15:47:58\",\n        \"updatedAt\": \"2022-09-25T23:37:30\"\n    },\n    \"name\": \"dish 2\",\n    \"price\": 16.5,\n    \"createdAt\": \"2022-09-25T23:25:51\",\n    \"updatedAt\": \"2022-09-25T23:41:51.6955719\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/restaurants/1/dishes/25",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"restaurants",
+								"1",
+								"dishes",
+								"25"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
